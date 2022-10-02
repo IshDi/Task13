@@ -1,13 +1,13 @@
 public class Main {
     public static void main(String[] args) {
-        SalesManager salesManager1 = new SalesManager(new int[]{100, 200, 252, 300, 420, 50});
-        int maxSales1 = salesManager1.max();
+        SalesManager salesManager1 = new SalesManager(new long[]{100, 200, 252, 300, 420, 50});
+        long maxSales1 = salesManager1.max();
         System.out.println(maxSales1);
         int statSales1 = salesManager1.stat();
         System.out.println(statSales1);
 
-        SalesManager salesManager2 = new SalesManager(new int[]{1000, 20440, 2502, 45240, 120, 1110});
-        int maxSales2 = salesManager2.max();
+        SalesManager salesManager2 = new SalesManager(new long[]{1000, 20440, 2502, 45240, 120, 1110});
+        long maxSales2 = salesManager2.max();
         System.out.println(maxSales2);
         int statSales2 = salesManager2.stat();
         System.out.println(statSales2);
