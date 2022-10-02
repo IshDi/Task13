@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class SalesManager {
     protected int[] sales;
 
@@ -13,5 +15,14 @@ public class SalesManager {
             }
         }
         return max;
+    }
+
+    public int stat() {
+        Arrays.sort(sales);
+        int count = 0;
+        for (int i = 1; i < sales.length - 1; i++) {
+            count += sales[i];
+        }
+        return count / (sales.length - 2);
     }
 }
