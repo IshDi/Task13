@@ -17,7 +17,7 @@ public class SalesManager {
         return max;
     }
 
-    public int stat() {
+    public long stat() {
         Arrays.sort(sales);
         int count = 0;
         for (int i = 1; i < sales.length - 1; i++) {
